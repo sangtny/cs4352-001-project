@@ -6,8 +6,6 @@ This Python script perfectly emulates both the queue-finding algorithm and their
 
 """
 
-A = [0, 0]
-
 def FindQueue(A: list):
     # Determines which queue the customer/car/process enters
 
@@ -47,16 +45,15 @@ cars.sort(key=lambda c: c[1])
 
 num_queues = 2
 queue = [0] * num_queues
-assigned_queues = [[], []]
+assigned_queues = [[] * num_queues]
 
 for i in range(len(cars)):
     car, arrival, burst = cars[i]
 
-    if burst < 6:
+    if burst < 10:
         assigned_queues[0].append(cars[i])
     else:
         assigned_queues[1].append(cars[i])
-
 
 
 ET = [] # finish_time - burst
