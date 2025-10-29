@@ -1,0 +1,24 @@
+# CS-4352-001 Operating Systems Project
+
+## Project Prompt
+
+The project is aimed to help students improve self-learning and research skills. The project is open-ended and students will decide on the particular algorithm(s) and real world application(s) to study, e.g., CPU scheduling and optimization, process and thread scheduling, memory management, network and security, parallel and distributed computing, etc.
+
+Research Paper: https://ieeexplore.ieee.org/abstract/document/10379263
+
+## Pseudocode
+
+This is our pseudocode for an improving the algorithm proposed in the research paper:
+
+1. Create queue (let's say 2)
+2. Set queues by burst range (first queue = low, second queue = high)
+3. Separate "cars" by burst
+    3a. low burst cars into first queue
+    3b. high burst cars into second queue
+4. Check which queue is overloaded
+    4a. possible solutions:
+        * set "maximum" number of elements in queue
+5. Add queue if over maximum to price group
+6. Alternate move "cars" from overloaded queue into the new one
+7. Ensure both queues are less than maximum
+8. If another "car" comes, determine which "low" or "high" queues to put in and put it in that queue
