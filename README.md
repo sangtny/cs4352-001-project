@@ -22,3 +22,7 @@ This is our pseudocode for an improving the algorithm proposed in the research p
 6. Alternate move "cars" from overloaded queue into the new one
 7. Ensure both queues are less than maximum
 8. If another "car" comes, determine which "low" or "high" queues to put in and put it in that queue
+
+## Contributors
+
+* [llivigni](https://github.com/llivigni)
