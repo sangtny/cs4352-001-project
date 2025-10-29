@@ -6,6 +6,10 @@ The project is aimed to help students improve self-learning and research skills.
 
 Research Paper: https://ieeexplore.ieee.org/abstract/document/10379263
 
+## Contributors
+
+* [llivigni](https://github.com/llivigni)
+
 ## Pseudocode
 
 This is our pseudocode for an improving the algorithm proposed in the research paper:
@@ -22,7 +26,3 @@ This is our pseudocode for an improving the algorithm proposed in the research p
 6. Alternate move "cars" from overloaded queue into the new one
 7. Ensure both queues are less than maximum
 8. If another "car" comes, determine which "low" or "high" queues to put in and put it in that queue
-
-## Contributors
-
-* [llivigni](https://github.com/llivigni)
