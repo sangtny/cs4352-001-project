@@ -1,0 +1,66 @@
+#!/usr/bin/python3
+
+A = [0, 0]
+
+def FindQueue(A: list):
+    # Determines which queue the customer/car/process enters
+
+    # Input: A set of queues (0..n-1) within price group A (i.e.
+    #        )
+    for i in range(len(A)):
+        if A[i] == 0:
+            position = i
+            A[i] = A[i] + 1
+            return position
+
+        for i in range(len(A) - 1):
+            min = i
+            for j in range(i + 1, len(A)):
+                if A[j] < A[min]:
+                    min = j
+
+            position = min
+            A[min] = A[min] + 1
+            return position
+
+cars = [
+    # Cars, Arrival, Burst
+    ("C1", 0, 2),
+    ("C2", 0, 10),
+    ("C3", 2, 10),
+    ("C4", 3, 2),
+    ("C5", 4, 2),
+    ("C6", 6, 2),
+    ("C7", 9, 5),
+    ("C8", 12, 2),
+    ("C9", 15, 2),
+    ("C10", 15, 10)
+]
+
+cars.sort(key=lambda c: c[1])
+
+num_queues = 2
+queue = [0] * num_queues
+assigned_queues = [[], []]
+
+for i in range(len(cars)):
+    car, arrival, burst = cars[i]
+
+    if burst < 6:
+        assigned_queues[0].append(cars[i])
+    else:
+        assigned_queues[1].append(cars[i])
+
+
+
+ET = [] # finish_time - burst
+TAT = [] # finish_time - arrival
+WT = [] # finish_time - arrival - burst
+
+for c in assigned_queues[0]:
+    print(c)
+
+print("====================")
+
+for c in assigned_queues[1]:
+    print(c)
