@@ -7,10 +7,10 @@ This Python script perfectly emulates both the queue-finding algorithm and their
 """
 
 def FindQueue(A: list):
-    # Determines which queue the customer/car/process enters
-
-    # Input: A set of queues (0..n-1) within price group A (i.e.
-    #        )
+    """
+    Determines which queue, given a list of the queues' size, is less
+    then returns the position of that queue.
+    """
     for i in range(len(A)):
         if A[i] == 0:
             position = i
