@@ -6,6 +6,11 @@ The project is aimed to help students improve self-learning and research skills.
 
 Research Paper: https://ieeexplore.ieee.org/abstract/document/10379263
 
+## Files
+
+* `harmonized_fcfs.py` - Contains the harmonized FCFS proposed in the research paper along with additional code to simulate how the authors obtained their results shown in Tables 3 and 4.
+* `improved_fcfs.py` - Contains the improved harmonized FCFS algorithm as well as additional code to show the results.
+
 ## Contributors
 
 * [llivigni](https://github.com/llivigni)
