@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+
+This Python script perfectly emulates both the queue-finding algorithm and their proposed harmonized FCFS algorithm.
+
+"""
+
 A = [0, 0]
 
 def FindQueue(A: list):
