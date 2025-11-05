@@ -17,15 +17,15 @@ Research Paper: https://ieeexplore.ieee.org/abstract/document/10379263
 
 ## Pseudocode
 
-This is our pseudocode for an improving the algorithm proposed in the research paper:
+This is our pseudocode the improvement of the harmonized FCFS algorithm proposed in the research paper (not to be confused with the Pseudocode section in the research paper):
 
 1. Create queue (let's say 2)
 2. Set queues by burst range (first queue = low, second queue = high)
 3. Separate "cars" by burst
-    3a. low burst cars into first queue
-    3b. high burst cars into second queue
+    * low burst cars into first queue
+    * high burst cars into second queue
 4. Check which queue is overloaded
-    4a. possible solutions:
+    *. possible solutions:
         * set "maximum" number of elements in queue
 5. Add queue if over maximum to price group
 6. Alternate move "cars" from overloaded queue into the new one
