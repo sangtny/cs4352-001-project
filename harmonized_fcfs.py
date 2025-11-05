@@ -2,7 +2,9 @@
 
 """
 
-This Python script perfectly emulates both the queue-finding algorithm and their proposed harmonized FCFS algorithm.
+This Python script contains research paper's queue-finding algorithm and emulates the proposed harmonized FCFS algorithm using data displayed in the paper.
+
+Research paper mentioned: https://ieeexplore.ieee.org/abstract/document/10379263
 
 """
 

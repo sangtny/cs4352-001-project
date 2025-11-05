@@ -2,7 +2,9 @@
 
 """
 
-This Python script improves the proposed algorithm from the research paper by splitting up overloaded queues using `FindQueue()`.
+This Python script contains and shows an improvement to the proposed algorithm from the research paper by dynamically reallocating overloaded queues.
+
+Research paper mentioned: https://ieeexplore.ieee.org/abstract/document/10379263
 
 """
 
