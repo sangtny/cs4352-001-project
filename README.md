@@ -13,7 +13,10 @@ Research Paper: https://ieeexplore.ieee.org/abstract/document/10379263
 
 ## Contributors
 
-* [llivigni](https://github.com/llivigni)
+* [L. Livigni](https://github.com/llivigni)
+* H. G. Kim
+* A. Kulkarni
+* M. Willinghan
 
 ## Pseudocode
 
