@@ -47,7 +47,7 @@ cars.sort(key=lambda c: c[1])
 
 num_queues = 2
 queue = [0] * num_queues
-assigned_queues = [[] * num_queues]
+assigned_queues = [[] for _ in range(num_queues)]
 
 for i in range(len(cars)):
     car, arrival, burst = cars[i]
